@@ -17,21 +17,13 @@ class MainActivity : AppCompatActivity() {
     private lateinit var firebaseAuth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
 
-        //Boton a pantalla de pre-orden
-      //  val btn: Button =findViewById(R.id.buttonselect)
-        //btn.setOnClickListener{
 
-          //  val intent: Intent =Intent(this,selectCompra::class.java)
-            //startActivity(intent)
-        //}
 
         super.onCreate(savedInstanceState)
         binding= ActivityMainBinding.inflate(layoutInflater)
         firebaseAuth = FirebaseAuth.getInstance()
         setContentView(binding.root)
         replaceFragmentView(medicamentosFragment()) //aca seteo un fragment por default
-
-
 
         binding.bottonNavigationMenu.setOnItemSelectedListener{
             when(it.itemId){

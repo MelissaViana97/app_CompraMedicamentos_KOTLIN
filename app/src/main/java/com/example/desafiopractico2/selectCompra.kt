@@ -12,14 +12,7 @@ class selectCompra : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_selectcompra)
 
-        //Boton a pantalla de pre-orden
 
-        val btn: Button =findViewById(R.id.buttonselect)
-        btn.setOnClickListener{
-
-            val intent: Intent =Intent(this,selectCompra::class.java)
-            startActivity(intent)
-        }
 
 
 
